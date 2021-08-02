@@ -31,3 +31,11 @@ table{
     margin-left: 0px;
     top: 150px;
 }
+form{
+    position: absolute;
+   
+    display: block;
+    text-align: center;
+    margin-left: 700px;
+    margin-right: auto;
+}
