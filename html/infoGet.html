@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -20,18 +21,19 @@
     </h1>
     <div id="image"></div>
     <div id="image2"><img src=".\vaccine.png"></div>
-    <form  name="myForm" action="/action_page.php" 
-    onsubmit="return validateForm()" method="post" required>
-    <label for="fname">First name:</label><br>
-    <input type="text" id="fname" name="fname" value=" "><br>
-    <label for="lname">Last name:</label><br>
-    <input type="text" id="lname" name="lname" value=" "><br>
-    <label for="postCode">Postcode:</label><br>
-    <input type="text" id="postCode" name="postCode" value=" "><br>
-    <p> Please submit     </p>
-    <input type="submit" value="Submit">
-       
-      </form>
+    <div id="form">
+    <form name="myFormName" action="/action_page.php" onsubmit="return validateFormName()" method="post" required>
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value=" " ><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value=" "><br>
+        <label for="postCode">Postcode:</label><br>
+        <input type="text" id="postCode" name="postCode" value=" "><br>
+        <p> Please submit </p>
+        <input type="submit" value="Submit">
+
+    </form>
+</div>
 </body>
 
 </html>

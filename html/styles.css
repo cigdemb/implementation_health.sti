@@ -1,3 +1,4 @@
+
 img{
     display: block;
     margin-left: auto;
@@ -31,7 +32,7 @@ table{
     margin-left: 0px;
     top: 150px;
 }
-form{
+#form{
     position: absolute;
    
     display: block;
