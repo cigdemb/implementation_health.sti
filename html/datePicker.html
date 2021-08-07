@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="library/CalendarPicker.style.css">
     <style>
         body {
+           
+            background-color: rgb(226, 249, 250);
+        
             display: grid;
             justify-items: center;
             align-content: center;
@@ -17,8 +20,9 @@
                 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
                 sans-serif;
         }
-           
-
+       h1{
+           color: blue;
+       }
         #myCalendarWrapper {
             width: 40em;
             border: 1px dashed black;
@@ -35,7 +39,11 @@
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
                 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
                 sans-serif;
+                color: rgb(226, 249, 250);
                 
+        }
+        #example1 {
+            color: black;
         }
 
         #example h3:not(:first-of-type) {
@@ -60,15 +68,45 @@
     <div id="showcase-wrapper">
         <div id="myCalendarWrapper"></div>
         <div id="example">
+            
+            
+                <div id="example1">   <h2>You picked: </h2>
+                <h3 id="current-datestring"></h3>
+                <h2> Please check for the available times for selected day </h2>
+                
+                  <script>
+
+                    const times = ["10.00 am", "14.10 pm", "11.20 am", "15.40 pm", "17.30 pm", "9.00 am", "9.10 am", "9.30 am", "9.40 am", "11.00 am", "13.00 pm",
+                    "14.00 pm", "15.00 pm", "16.00 pm"];
+                
+                function findTimes() {
+                  let randomIndex = Math.floor(Math.random() * times.length);
+                  document.getElementById("randomTimes").setAttribute("value", times[randomIndex]);
+                
+                }
+                </script>
+                
+                <div>
+                    <input "randomTimes" id="randomTimes"><br><br>
+                  <button onclick="findTimes();" type="randomTimes">Available Times</button>
+                  
+                  
+                  <form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+                    <br>
+                    <input type="submit" value="Submit">
+                  </form>
+                </div>
+                </div>
+                <h3>currentValue.toDateSring():
+            </h3>
             <h3>currentValue:
                 <p id="current-date"></p>
             </h3>
             <h3>currentValue.getDay():
                 <p id="current-day"></p>
             </h3>
-            <h3>currentValue.toDateSring():
-                <p id="current-datestring"></p>
-            </h3>
+           
+           
         </div>
     </div>
 
