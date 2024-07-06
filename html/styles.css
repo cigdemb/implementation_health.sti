@@ -41,10 +41,7 @@ table{
     top: 150px;
 }
 #form{
-    position: absolute;
-   
-    display: block;
+    
     text-align: center;
-    margin-left: 670px;
-    margin-right: auto;
+    
 }
